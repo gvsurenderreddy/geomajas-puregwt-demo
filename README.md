@@ -29,6 +29,7 @@ $ mvn clean install
 
 * configure _geomajas-layer-deegree_ under **geomajas-puregwt-demo/src/main/webapp/WEB-INF/layerDeegreeWfs.xml**
   * setup wfs client configuration
+
 ```xml
     <bean name="layerWfs" class="org.deegree.DeegreeLayer">
       <property name="url" value="http://hostname:PORT/services/wfs" />
@@ -38,6 +39,7 @@ $ mvn clean install
     </bean>
 ```
   * define attributes for the feature type
+
 ```xml
     <bean class="org.geomajas.configuration.FeatureInfo" name="layerWfsLayerFeatureInfo">
       <property name="identifier">
@@ -62,7 +64,7 @@ $ mvn clean install
 $ cd geomajas-puregwt-demo
 $ mvn clean install
 ```
-  * ensure wfs server is running (e.g. local [deegree][http://www.deegree.org/Download] wfs serice )
+  * ensure wfs server is running (e.g. local [deegree](http://www.deegree.org/Download) wfs serice )
   * run the application either with jetty or tomcat
 
 ```bash
