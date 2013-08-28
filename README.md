@@ -2,7 +2,6 @@ geomajas-puregwt-demo
 =====================
 
 [geomajas-layer-deegree](https://github.com/martin-vi/geomajas-layer-deegree)
-[deegree](http://www.deegree.org/Download)
 
 example geomajas application using the [geomajas-layer-deegree][] as vector layer and the pure gwt face.
 
@@ -58,13 +57,16 @@ $ mvn clean install
     </bean>
 ```
   * compile the webapp
+
 ```bash
 $ cd geomajas-puregwt-demo
 $ mvn clean install
 ```
-  * ensure wfs server is running (e.g. local [deegree][] wfs serice )
+  * ensure wfs server is running (e.g. local [deegree][http://www.deegree.org/Download] wfs serice )
   * run the application either with jetty or tomcat
+
 ```bash
 $ mvn jetty:run
 ```
+
   * navigate your browser to [http://localhost:8080/](http://localhost:8080/)
