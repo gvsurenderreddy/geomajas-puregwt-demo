@@ -1,8 +1,6 @@
 geomajas-puregwt-demo
 =====================
 
-[geomajas-layer-deegree](https://github.com/martin-vi/geomajas-layer-deegree)
-
 example geomajas application using the [geomajas-layer-deegree][] as vector layer and the pure gwt face.
 
 screenshot
@@ -15,7 +13,7 @@ screenshot
 installation
 ------------
 
-* compile [geomajas-layer-deegree][]
+* compile [geomajas-layer-deegree](https://github.com/martin-vi/geomajas-layer-deegree)
 ```bash
 $ git clone https://github.com/martin-vi/geomajas-layer-deegree.git
 $ cd geomajas-layer-deegree
@@ -27,7 +25,7 @@ $ mvn clean install
 % git clone https://github.com/martin-vi/geomajas-puregwt-demo.git
 ```
 
-* configure _geomajas-layer-deegree_ under **geomajas-puregwt-demo/src/main/webapp/WEB-INF/layerDeegreeWfs.xml**
+* configure _geomajas-layer-deegree_ under geomajas-puregwt-demo/src/main/webapp/WEB-INF/layerDeegreeWfs.xml
   * setup wfs client configuration
 
 ```xml
