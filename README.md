@@ -10,7 +10,7 @@ screenshot
 
 ![screenshot][screenshot]
 
-installation
+Installation
 ------------
 
 * compile [geomajas-layer-deegree](https://github.com/martin-vi/geomajas-layer-deegree)
@@ -71,3 +71,10 @@ $ mvn jetty:run
   ```
 
 6. navigate your browser to [http://localhost:8080/](http://localhost:8080/)
+
+Known issues
+------------
+
+* the _Click_ button has no use for now, the package containing the FeatureClickedListener in geomajas somehow did not keep up with the latest releases
+* not all filter are yet implemented in geomajas-layer-deegree
+* in large scale the get feature tool is not very accurate, induced by rounding in deegree (geomajas to deegree geometry conversion)
