@@ -1,7 +1,7 @@
 geomajas-puregwt-demo
 =====================
 
-example geomajas application using the [geomajas-layer-deegree][] as vector layer and the pure gwt face.
+example geomajas application using the [geomajas-layer-deegree](https://github.com/martin-vi/geomajas-layer-deegree) as vector layer and the pure gwt face.
 
 screenshot
 ----------
@@ -26,19 +26,20 @@ $ mvn clean install
 ```
 
 * configure _geomajas-layer-deegree_ under geomajas-puregwt-demo/src/main/webapp/WEB-INF/layerDeegreeWfs.xml
-  * setup wfs client configuration
 
-```xml
+1. setup wfs client configuration
+
+  ```xml
     <bean name="layerWfs" class="org.deegree.DeegreeLayer">
       <property name="url" value="http://hostname:PORT/services/wfs" />
       <property name="featureTypeName" value="MY_WFS_FEATURE" />
       <property name="featureGeometyPropertyName" value="geometryProperty" />
       <property name="layerInfo" ref="layerWfsLayerInfo" />
     </bean>
-```
-  * define attributes for the feature type
+  ```
+2. define attributes for the feature type
 
-```xml
+  ```xml
     <bean class="org.geomajas.configuration.FeatureInfo" name="layerWfsLayerFeatureInfo">
       <property name="identifier">
         [...]
@@ -55,18 +56,18 @@ $ mvn clean install
         </list>
       </property>
     </bean>
-```
-  * compile the webapp
+   ```
+3. compile the webapp
 
-```bash
+  ```bash
 $ cd geomajas-puregwt-demo
 $ mvn clean install
-```
-  * ensure wfs server is running (e.g. local [deegree](http://www.deegree.org/Download) wfs serice )
-  * run the application either with jetty or tomcat
+  ```
+4. ensure wfs server is running (e.g. local [deegree](http://www.deegree.org/Download) wfs serice )
+5. run the application either with jetty or tomcat
 
-```bash
+  ```bash
 $ mvn jetty:run
-```
+  ```
 
-  * navigate your browser to [http://localhost:8080/](http://localhost:8080/)
+6. navigate your browser to [http://localhost:8080/](http://localhost:8080/)
